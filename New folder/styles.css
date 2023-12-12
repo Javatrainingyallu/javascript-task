@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#display {
+    grid-column: span 4;
+    padding: 20px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.calculator {
+    outline-color: blue;
+}
+
+.calculator.solid {
+    outline-style: solid;
+}
